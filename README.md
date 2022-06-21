@@ -128,7 +128,15 @@ In this section, you will test your Robo Advisor.
 
 - [x] Be creative while coding your solution, you can have all the code on the `recommend_portfolio()` function, or you can split the functionality across different functions, put your Python coding skills in action!
 
-- [x] Once you finish coding your lambda function, test it using the [sample test cases](Test_Cases/) provided for this homework.
+- [x] Once you finish coding your lambda function, test it using the sample test cases.
+
+![Age Error](./images/age_error.png)
+
+![Correct Dialog](./images/correct_input.png)
+
+![Incorrect Amount](./images/amount_error.png)
+
+![Negative Age](./images/negative_age.png)
 
 - [x] After successfully testing your code, open the Amazon Lex Console and navigate to the `RecommendPortfolio` bot configuration, integrate your new lambda function by selecting it in the _Lambda initialization and validation_ and _Fulfillment_ sections. Build your bot, and you should have a conversation as follows.
 
