@@ -110,23 +110,22 @@ In this section, you will test your Robo Advisor.
 - [x] In this section, you will create an Amazon Lambda function that will validate the data provided by the user on the Robo Advisor. Start by creating a new lambda function from scratch and name it `recommendPortfolio`. Select Python 3.7 as runtime.
 
 - [x] In the Lambda function, start by deleting the AWS generated default lines of code, then paste in the starter code provided in [lambda_function.py](./RoboAdvisor/lambda_function.py) and complete the `recommend_portfolio()` function by following these guidelines:
+    - User Input Validation
 
-## User Input Validation
+        - [x] The `age` should be greater than zero and less than 65.
+        - [x] the `investment_amount` should be equal to or greater than 5000.
 
-- [x] The `age` should be greater than zero and less than 65.
-- [x] the `investment_amount` should be equal to or greater than 5000.
+    - Investment Portfolio Recommendation
 
-## Investment Portfolio Recommendation
+        - [x] Once the intent is fulfilled, the bot should response with an investment recommendation based on the selected risk level as follows:
+            - **none:** "100% bonds (AGG), 0% equities (SPY)"
+            - **very low:** "80% bonds (AGG), 20% equities (SPY)"
+            - **low:** "60% bonds (AGG), 40% equities (SPY)"
+            - **medium:** "40% bonds (AGG), 60% equities (SPY)"
+            - **high:** "20% bonds (AGG), 80% equities (SPY)"
+            - **very high:** "0% bonds (AGG), 100% equities (SPY)"
 
-- [x] Once the intent is fulfilled, the bot should response with an investment recommendation based on the selected risk level as follows:
-    - **none:** "100% bonds (AGG), 0% equities (SPY)"
-    - **very low:** "80% bonds (AGG), 20% equities (SPY)"
-    - **low:** "60% bonds (AGG), 40% equities (SPY)"
-    - **medium:** "40% bonds (AGG), 60% equities (SPY)"
-    - **high:** "20% bonds (AGG), 80% equities (SPY)"
-    - **very high:** "0% bonds (AGG), 100% equities (SPY)"
-
-- [x] Be creative while coding your solution, you can have all the code on the `recommend_portfolio()` function, or you can split the functionality across different functions, put your Python coding skills in action!
+    - [x] Be creative while coding your solution, you can have all the code on the `recommend_portfolio()` function, or you can split the functionality across different functions, put your Python coding skills in action!
 
 - [x] Once you finish coding your lambda function, test it using the sample test cases.
 
