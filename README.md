@@ -62,7 +62,11 @@ Optional Challenge
     - I want to invest for my retirement
     - I would like to invest for my retirement
 
+![Utterances](./images/utterances.png)
+
 - [x] This bot will use four slots, three using built-in types and one custom slot named `riskLevel`. Define the three initial slots as follows:
+
+![](./images/slots.png)
 
 - [x] The `riskLevel` custom slot will be used to retrieve the risk level the user is willing to take on the investment portfolio. Create this custom slot as follows:
 
@@ -73,6 +77,8 @@ Optional Challenge
 - [x] Select the radial dial button next to **Restrict to Slot values and synonyms**, then fill in the appropriate values and synonums. _Example_: Low, Minimal; High, Maximum.
 
 - [x] Click `Add slot to intent` when finished.
+
+![](./images/slot_values.png)
 
 - [x] Next, input the following data in the resulting display window:
 
@@ -91,21 +97,19 @@ Optional Challenge
 
 - [x] Leave the error handling configuration for the `RecommendPortfolio` bot with the default values.
 
-![Error handling configuration](Images/error_handling.png)
-
 ## Build and Test the Robo Advisor
 In this section, you will test your Robo Advisor. 
 - [x] To build your bot, click on the `Build` button in the upper right hand corner. 
-- Once the build is complete, test it in the chatbot window. 
-- You should see a conversation like the one below.
+- [x] Once the build is complete, test it in the chatbot window. 
+- [x] You should see a conversation like the one below.
 
-![Robo Advisor test](Images/bot-test-no-lambda.gif)
+![Robo Advisor test](./images/robo_advisor_test.gif)
 
 ## Enhance the Robo Advisor with an Amazon Lambda Function
 
 - [x] In this section, you will create an Amazon Lambda function that will validate the data provided by the user on the Robo Advisor. Start by creating a new lambda function from scratch and name it `recommendPortfolio`. Select Python 3.7 as runtime.
 
-- [x] In the Lambda function, start by deleting the AWS generated default lines of code, then paste in the starter code provided in [lambda_function.py](Starter_Files/lambda_function.py) and complete the `recommend_portfolio()` function by following these guidelines:
+- [x] In the Lambda function, start by deleting the AWS generated default lines of code, then paste in the starter code provided in [lambda_function.py](./RoboAdvisor/lambda_function.py) and complete the `recommend_portfolio()` function by following these guidelines:
 
 ## User Input Validation
 
